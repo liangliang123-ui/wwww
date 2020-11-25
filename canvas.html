@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		canvas{
+			background:pink;
+			display:block;
+			/*margin:0 auto;*/
+		}
+		/*设置尺寸会出现问题*/
+	</style>
+</head>
+<body>
+	<!-- 默认300*150 -->
+	<canvas width='600' height='300'>
+		 
+	</canvas>
+	<script>
+		let Ocanvas=document.querySelector('canvas');
+		// 绘制环境
+		let ren=Ocanvas.getContext('2d');
+		// 作图
+		ren.fillStyle='yellow'
+		ren.strokeStyle='red'
+		ren.fillRect(0,0,200,100)
+		// 描边矩形
+		
+		ren.strokeRect(50,50,200,100)
+		ren.fill();
+		ren.fillStyle='green'
+		ren.rect(100,100,200,100)
+		ren.stroke()
+		// 清除画布
+		ren.clearRect(300,0,300,300)
+	</script>
+</body>
+</html>
