@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-3.4.0.js"></script>
+	<style>
+		div{
+			margin:0;
+			padding:0;
+		}
+		.wrap{
+			width:300px;
+			height:600px;
+			margin:0 auto;
+			background:#ccc;
+		}
+		.box{
+			width:300px;
+			height:300px;
+			position:relative;
+		}
+		.box>div{
+			float:left;
+		}
+		.box2{
+			position:absolute;
+			right:15px;
+			top:30px;
+		}
+		.box1 img{
+			width:300px;
+			height:300px;
+		}
+		.box2 img{
+			width:100px;
+		}
+		p{
+			text-align:center;
+			line-height:26px;
+		}
+		@keyframes xz{
+			0%{transform:rotate(0deg)};
+			100%{transform:rotate(360deg)}
+		}
+		.move{
+			animation:xz 6s linear infinite;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box">
+			<p>美丽的神话</p>
+			<div class='box1'><img src="1.png" alt=""></div>
+			<div class='box2'><img src="2.png" alt=""></div>
+			<audio id ="aud" src="多媒体/yqz.mp3" controls autoplay="autoplay" loop>
+  				<source src="多媒体/yqz.mp3" type="audio/mp3">
+  				<source src="多媒体/yqz.ogg" type="audio/ogg">
+			</audio>
+			<div class="box3">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+			</div>
+		</div> 
+	</div>
+	<script type='text/javascript'>
+		var audio=document.querySelector('#audio')
+		var box1=document.querySelector('.box1')
+		audio.onplay=function(){
+			box1.
+		}
+	</script>
+</body>
+</html>
